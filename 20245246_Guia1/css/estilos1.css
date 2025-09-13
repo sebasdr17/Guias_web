@@ -1,0 +1,19 @@
+body {
+  background-color: #bfe9ff;
+}
+
+header h2 {
+  color: white;
+}
+
+p.negrita {
+  font-weight: bold;
+}
+
+p.justificado {
+  text-align: justify;
+}
+
+p.pequeno {
+  font-size: 12px;
+}
