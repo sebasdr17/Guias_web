@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEE;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#tablero {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+
+#tablero p {
+    background-color: black;
+    color: white;
+    float: left;
+    font-size: 36px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* Celdas blancas en filas impares */
+#tablero .filaImpar p:nth-child(2n+1) {
+    background-color: white;
+    color: black;
+}
+
+/* Celdas blancas en filas pares */
+#tablero .filaPar p:nth-child(2n) {
+    background-color: white;
+    color: black;
+}

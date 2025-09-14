@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+    background: linear-gradient(135deg, #fff0f0, #ffe6e6);
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #ff4d4d, #cc0000);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Presentación */
+.presentacion {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255,0,0,0.2);
+    text-align: center;
+    border-left: 8px solid #ff4d4d;
+}
+
+/* Datos rápidos */
+.datos {
+    background-color: #ffe6e6;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255,0,0,0.1);
+    border-top: 5px solid #cc0000;
+}
+
+.datos h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #cc0000;
+}
+
+.datos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datos li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px dashed #ff9999;
+}
+
+/* Hobbies */
+.hobbies {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255,0,0,0.2);
+}
+
+.hobbies h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #e60000;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #ffcccc;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #ff9999;
+    border-color: #cc0000;
+}
+
+/* Frase motivadora */
+.frase {
+    text-align: center;
+    font-style: italic;
+    margin: 2rem auto;
+    max-width: 700px;
+    color: #b30000;
+    background-color: #fff0f0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #cc0000;
+    color: white;
+    margin-top: 2rem;
+}

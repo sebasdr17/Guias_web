@@ -1,0 +1,76 @@
+/* Paso 14: Estilos básicos */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+footer {
+    font-size: 1rem;
+}
+
+/* Paso 16: Estilizar wrapper */
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Paso 17: Estilizar artículos dentro de sección */
+section > article {
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Paso 18: Estilizar párrafos dentro de artículos que están en section */
+section article p {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Paso 19: Estilizar vínculos dentro de nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+/* Paso 20: Hover para los enlaces del nav */
+nav ul li a:hover {
+    background-color: lightblue;
+}
+
+/* Paso 21: Selector de atributos para el enlace a "elenco" */
+nav ul li a[href*="wikipedia"] {
+    background-color: #9E9E9E;
+    color: white;
+}
+
+/* Paso 22: Primera letra de cada párrafo */
+section article p:first-letter {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+/* Paso 23: Primera línea del primer párrafo del primer artículo */
+section article:first-child p:first-line {
+    text-decoration: underline;
+}
