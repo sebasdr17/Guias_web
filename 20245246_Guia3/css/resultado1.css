@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Ocultamos todas las cartas menos el As */
+#diez_de_diamantes,
+#sota_de_diamantes,
+#reina_de_diamantes,
+#rey_de_diamantes {
+    display: none;
+}
+
+/* Mostramos el As centrado */
+#as_de_diamantes {
+    margin-top: 40px;
+}

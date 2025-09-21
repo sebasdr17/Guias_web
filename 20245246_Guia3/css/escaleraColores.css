@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Todas las cartas se posicionan de forma absoluta */
+div {
+    position: absolute;
+}
+
+/* Carta: Diez de diamantes */
+#diez_de_diamantes {
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+/* Carta: Sota de diamantes */
+#sota_de_diamantes {
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+/* Carta: Reina de diamantes */
+#reina_de_diamantes {
+    top: 150px;
+    left: 150px;
+    z-index: 3;
+}
+
+/* Carta: Rey de diamantes */
+#rey_de_diamantes {
+    top: 200px;
+    left: 200px;
+    z-index: 4;
+}
+
+/* Carta: As de diamantes */
+#as_de_diamantes {
+    top: 250px;
+    left: 250px;
+    z-index: 5;
+}
