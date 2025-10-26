@@ -3,67 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guía 1 - HTML y CSS</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    header {
-      background: #1976d2;
-      color: white;
-      padding: 20px;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    main {
-      padding: 30px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 12px 0;
-    }
-
-    a {
-      display: inline-block;
-      padding: 10px 20px;
-      text-decoration: none;
-      background: #2196f3;
-      color: white;
-      border-radius: 6px;
-      transition: background 0.2s;
-    }
-
-    a:hover {
-      background: #0d47a1;
-    }
-  </style>
+  <title>Portafolio Estudiantil</title>
+  <link rel="stylesheet" href="css/portafolio.css">
 </head>
 <body>
   <header>
-    <h1>Guía 1 - Introducción a HTML y CSS</h1>
-    <p>Página de inicio con enlaces a los ejemplos y ejercicios</p>
+    <h1>Portafolio Estudiantil</h1>
+    <p>Desarrollo Web I – Ciclo 03-2025</p>
   </header>
 
-  <main>
-    <ul>
-      <li><a href="estilos_embebidos.html">Ejemplo 1 - Estilos embebidos</a></li>
-      <li><a href="ejemplo2.html">Ejemplo 2 - Uso de style en head</a></li>
-      <li><a href="paises.html">Ejemplo 3 - Archivo externo (Centroamérica)</a></li>
-      <li><a href="mi_programa.html">Ejercicio Complementario 1 - Un Show Más</a></li>
-    </ul>
-  </main>
+  <section class="datos-personales">
+    <h2>Datos Personales</h2>
+    <p><strong>Nombre:</strong> Sebastián Dimas</p>
+    <p><strong>Carnet:</strong> 20245246</p>
+    <p>Soy estudiante de Ingeniería en Software en la ESEN. Apasionado por el desarrollo web, el diseño visual y la resolución de problemas técnicos con precisión y creatividad.</p>
+  </section>
+
+  <section class="datos-materia">
+    <h2>Sobre la Materia</h2>
+    <p>Desarrollo Web I es una asignatura que introduce los fundamentos de HTML, CSS y diseño responsivo. A lo largo del curso se exploran estructuras semánticas, estilos visuales, posicionamiento, formularios, diseño adaptativo y buenas prácticas de desarrollo frontend.</p>
+  </section>
+
+  <section class="guias">
+    <h2>Guías de Ejercicios</h2>
+    <div class="guia">
+      <h3>Guía 1: Introducción a HTML</h3>
+      <p>Se trabajó con etiquetas básicas, estructura semántica y contenido textual.</p>
+      <a href="20245246_Guia1/index.html">Ver Guía 1</a>
+    </div>
+    <div class="guia">
+      <h3>Guía 2: Estilos con CSS</h3>
+      <p>Aplicación de estilos, selectores, colores, bordes y tipografía.</p>
+      <a href="20245246_Guia2/index.html">Ver Guía 2</a>
+    </div>
+    <div class="guia">
+      <h3>Guía 3: Posicionamiento y cajas</h3>
+      <p>Uso de display, float, margin, padding y box model.</p>
+      <a href="20245246_Guia3/inicio_guia3.html">Ver Guía 3</a>
+    </div>
+    <div class="guia">
+      <h3>Guía 4: Responsive Design</h3>
+      <p>Uso de media queries, diseño fluido y estructura adaptable.</p>
+      <a href="20245246_Guia4/inicio_guia4.html">Ver Guía 4</a>
+    </div>
+  </section>
+
+  <section class="foda">
+    <h2>Análisis FODA</h2>
+    <div class="foda-grid">
+      <div class="foda-item fortalezas">
+        <h3>Fortalezas</h3>
+        <p>Dominio avanzado de HTML y CSS. Precisión en la implementación visual y estructural de interfaces.</p>
+      </div>
+      <div class="foda-item oportunidades">
+        <h3>Oportunidades</h3>
+        <p>Aplicación de diseño responsivo y buenas prácticas en proyectos reales o profesionales.</p>
+      </div>
+      <div class="foda-item debilidades">
+        <h3>Debilidades</h3>
+        <p>Necesito seguir practicando Flexbox y Grid para lograr mayor fluidez en estructuras complejas.</p>
+      </div>
+      <div class="foda-item amenazas">
+        <h3>Amenazas</h3>
+        <p>Limitaciones de tiempo y compatibilidad entre navegadores pueden afectar la calidad del desarrollo.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sebastián Dimas – Portafolio Estudiantil</p>
+  </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guía 1 - HTML y CSS</title>
+  <title>Guía 4 - Responsive Design</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
     }
 
     header {
-      background: #1976d2;
+      background: #0097a7;
       color: white;
       padding: 20px;
     }
@@ -30,6 +30,8 @@
     ul {
       list-style: none;
       padding: 0;
+      max-width: 600px;
+      margin: auto;
     }
 
     li {
@@ -40,30 +42,35 @@
       display: inline-block;
       padding: 10px 20px;
       text-decoration: none;
-      background: #2196f3;
+      background: #00acc1;
       color: white;
       border-radius: 6px;
       transition: background 0.2s;
     }
 
     a:hover {
-      background: #0d47a1;
+      background: #006064;
+    }
+
+    @media (max-width: 600px) {
+      a {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Guía 1 - Introducción a HTML y CSS</h1>
-    <p>Página de inicio con enlaces a los ejemplos y ejercicios</p>
+    <h1>Guía 4 - Responsive Design</h1>
+    <p>Página de inicio con enlaces a los ejercicios y ejemplos</p>
   </header>
 
   <main>
     <ul>
-      <li><a href="estilos_embebidos.html">Ejemplo 1  Estilos embebidos</a></li>
-      <li><a href="ejemplo2.html">Ejemplo 2  Uso de style en head</a></li>
-      <li><a href="paises.html">Ejemplo 3  Archivo externo (Centroamérica)</a></li>
-      <li><a href="mi_programa.html">Ejercicio Complementario  Un Show Más</a></li>
-      <li><a href="analisis de resultados.html">Análisis de resultados</a></li>
+      <li><a href="mediaqueries.html">Ejercicio 1 – Media Queries</a></li>
+      <li><a href="index.html">Ejercicio 2 – Página principal (Agencia de viajes)</a></li>
+      <li><a href="planes.html">Ejercicio 2 – Planes turísticos</a></li>
+      <li><a href="galeria.html">Ejercicio 2 – Galería de imágenes</a></li>
     </ul>
   </main>
 </body>
