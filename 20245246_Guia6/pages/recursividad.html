@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recursividad</title>
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/stylesFunciones.css" rel="stylesheet" />
+  <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+</head>
+<body>
+  <header>
+    <div class="px-3 py-2 text-bg-dark fixed-top">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="../indexFunciones.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+          </a>
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-bar">
+            <li class="text-center"><a href="recursividad.html" class="nav-link active">Recursividad</a></li>
+            <li class="text-center"><a href="tabla.html" class="nav-link text-white">Tabla</a></li>
+            <li class="text-center"><a href="formulario.html" class="nav-link text-white">Formulario</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-md">
+    <div class="row">
+      <div class="col-12">
+        <div class="shadow-lg p-3 mt-5 bg-body rounded">
+          <h3>Ejemplo de recursividad</h3>
+          <p>La recursividad permite que una función se llame a sí misma para resolver un problema.</p>
+          <form onsubmit="return false">
+            <div class="row mb-3">
+              <label for="inputNumero" class="col-sm-4 col-form-label">Ingrese un número</label>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputNumero" value="5" />
+              </div>
+            </div>
+            <button type="button" class="btn btn-success" id="idBtnCalcularFactorial">
+              Calcular factorial
+            </button>
+          </form>
+          <div class="mt-4">
+            <h4>Resultado:</h4>
+            <div id="idResultado">Ninguno</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/recursividad.js" defer></script>
+</body>
+</html>

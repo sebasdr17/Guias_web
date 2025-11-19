@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario con funciones</title>
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/stylesFunciones.css" rel="stylesheet" />
+  <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+</head>
+<body>
+  <header>
+    <div class="px-3 py-2 text-bg-dark fixed-top">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="../indexFunciones.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+          </a>
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-bar">
+            <li class="text-center"><a href="recursividad.html" class="nav-link text-white">Recursividad</a></li>
+            <li class="text-center"><a href="tabla.html" class="nav-link text-white">Tabla</a></li>
+            <li class="text-center"><a href="formulario.html" class="nav-link active">Formulario</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-md">
+    <div class="row">
+      <div class="col-12">
+        <div class="shadow-lg p-3 mt-5 bg-body rounded">
+          <h3>Formulario de pacientes</h3>
+          <form onsubmit="return false" id="idFormulario">
+            <div class="row mb-3">
+              <label for="inputNombre" class="col-sm-3 col-form-label">Nombre</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputNombre" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputApellido" class="col-sm-3 col-form-label">Apellido</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputApellido" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputFechaNacimiento" class="col-sm-3 col-form-label">Fecha nacimiento</label>
+              <div class="col-sm-9">
+                <input type="date" class="form-control" id="inputFechaNacimiento" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-3 col-form-label">Sexo</label>
+              <div class="col-sm-9">
+                <input type="radio" id="inputRdMasculino" name="sexo" /> Hombre
+                <input type="radio" id="inputRdFemenino" name="sexo" /> Mujer
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="cmbPais" class="col-sm-3 col-form-label">País</label>
+              <div class="col-sm-9">
+                <select id="cmbPais" class="form-select">
+                  <option>El Salvador</option>
+                  <option>Guatemala</option>
+                  <option>Honduras</option>
+                  <option>Nicaragua</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputDireccion" class="col-sm-3 col-form-label">Dirección</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" id="inputDireccion"></textarea>
+              </div>
+            </div>
+            <button type="button" class="btn btn-success" id="idBtnAgregarPaciente">Agregar paciente</button>
+            <button type="button" class="btn btn-primary" id="idBtnMostrarPaciente">Mostrar pacientes</button>
+          </form>
+          <div class="mt-4">
+            <h4>Pacientes registrados:</h4>
+            <div id="idTablaPacientes">Ninguno</div>
+          </div>
+        </div>
+
+        <div class="shadow-lg p-3 mt-5 bg-body rounded">
+          <h3>Validación de estudiante con expresiones regulares</h3>
+          <form onsubmit="return false" id="idFormEstudiante">
+            <div class="mb-3">
+              <label for="inputCarnet" class="form-label">Carnet (AA001)</label>
+              <input type="text" class="form-control" id="inputCarnet" />
+            </div>
+            <div class="mb-3">
+              <label for="inputNombreCompleto" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="inputNombreCompleto" />
+            </div>
+            <div class="mb-3">
+              <label for="inputDUI" class="form-label">DUI (########-#)</label>
+              <input type="text" class="form-control" id="inputDUI" />
+            </div>
+            <div class="mb-3">
+              <label for="inputNIT" class="form-label">NIT (####-######-###-#)</label>
+              <input type="text" class="form-control" id="inputNIT" />
+            </div>
+            <div class="mb-3">
+              <label for="inputFechaNac" class="form-label">Fecha nacimiento (dd/mm/aaaa)</label>
+              <input type="text" class="form-control" id="inputFechaNac" />
+            </div>
+            <div class="mb-3">
+              <label for="inputCorreo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="inputCorreo" />
+            </div>
+            <div class="mb-3">
+              <label for="inputEdad" class="form-label">Edad</label>
+              <input type="number" class="form-control" id="inputEdad" />
+            </div>
+            <button type="button" class="btn btn-success" id="idBtnValidarEstudiante">Validar estudiante</button>
+          </form>
+          <div class="mt-4">
+            <h4>Resultado validación:</h4>
+            <div id="idResultadoEstudiante">Ninguno</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/formulario.js" defer></script>
+</body>
+</html>
